@@ -5,7 +5,13 @@ const Store = require("../models/store");
 
 router
   .route("/")
-  // GET stores - get all stores
+  /**
+   * get all stores
+   * @route GET /store
+   * @group Store - api
+   * @returns {Array<Store>} 200 - An array of store info
+   * @returns {Error}  default - Unexpected error
+   */
   .get((req, res, next) =>
     Promise.resolve()
       .then(() => Store.findAll())
@@ -13,6 +19,14 @@ router
       .catch((err) => next(err))
   )
   // POST /store - create a new store
+  /**
+   * create a new stores
+   * @route POST /store
+   * @group Store - api
+   * @param {StorePost.model} store.body.required - the new store
+   * @returns {Store} 201 - my store
+   * @returns {Error}  default - Unexpected error
+   */
   .post((req, res, next) =>
     Promise.resolve()
       .then(() => Store.create(req.body))
@@ -21,6 +35,14 @@ router
   );
 
 router
+/**
+   * get store by id
+   * @route GET /store/{id}
+   * @group Store - api
+   * @param {string} id.path.required - store id
+   * @returns {Store} 200 - A store info
+   * @returns {Error}  default - Unexpected error
+   */
   .route("/:id")
   // GET /store/:id - get a store by id
   .get((req, res, next) =>
@@ -39,6 +61,15 @@ router
       .then((store) => res.status(200).json(store))
       .catch((err) => next(err))
   )
+  /**
+   * put store by id
+   * @route PUT /store/{id}
+   * @group Store - api
+   * @param {string} id.path.required - store id
+   * @param {StorePost.model} store.body.required - the new store
+   * @returns {StorePost}  203 - my store
+   * @returns {Error}  default - Unexpected error
+   */
   // PUT /store/:id - update all store fields
   .put((req, res, next) =>
     Promise.resolve()

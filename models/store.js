@@ -1,6 +1,30 @@
 const sequelize = require("./db");
 const { DataTypes } = require("sequelize");
 
+/**
+ * This function return my user
+ * @typedef Store
+ * @property {string} id
+ * @property {string} name
+ * @property {string} address
+ * @property {string} phone
+ * @property {string} email
+ * @property {string} cnpj
+ * @property {string} password
+ * @property {string} createdAt
+ * @property {string} updatedAt
+ */
+
+/**
+ * This function return my user
+ * @typedef StorePost
+ * @property {string} name
+ * @property {string} address
+ * @property {string} phone
+ * @property {string} email
+ * @property {string} cnpj
+ * @property {string} password
+ */
 const Store = sequelize.define("Store", {
   name: {
     type: DataTypes.STRING,

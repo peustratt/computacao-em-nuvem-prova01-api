@@ -1,12 +1,19 @@
-var createError = require("http-errors");
-var express = require("express");
-var path = require("path");
-var cookieParser = require("cookie-parser");
-var logger = require("morgan");
+const createError = require("http-errors");
+const express = require("express");
+const path = require("path");
+const cookieParser = require("cookie-parser");
+const logger = require("morgan");
+const esg = require('express-swagger-generator')
+
+// swagger config
+const defaultOptions = require('./swagger.json')
+const options = Object.assign(defaultOptions, { basedir: __dirname }) // app absolute path
 
 const { Store } = require("./routes");
 
 var app = express();
+const expressSwagger = esg(app)
+expressSwagger(options)
 
 app.use(logger("dev"));
 app.use(express.json());
