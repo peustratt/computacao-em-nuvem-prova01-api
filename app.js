@@ -13,7 +13,7 @@ const options = Object.assign(defaultOptions, { basedir: __dirname }) // app abs
 const { Store } = require("./routes");
 
 var app = express();
-app.use(cors())
+app.use(cors());
 const expressSwagger = esg(app)
 expressSwagger(options)
 
