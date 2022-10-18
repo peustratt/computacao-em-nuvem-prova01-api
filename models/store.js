@@ -17,6 +17,12 @@ const { DataTypes } = require("sequelize");
 
 /**
  * This function return my user
+ * @typedef StoreDelete
+ * @property {string} message
+ */
+
+/**
+ * This function return my user
  * @typedef StorePost
  * @property {string} name
  * @property {string} address

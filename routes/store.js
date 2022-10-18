@@ -78,6 +78,14 @@ router
       .then((store) => res.status(201).json(store))
       .catch((err) => next(err))
   )
+    /**
+   * put store by id
+   * @route DELETE /store/{id}
+   * @group Store - api
+   * @param {string} id.path.required - store id
+   * @returns {StoreDelete}  201 - my store
+   * @returns {Error}  default - Unexpected error
+   */
   .delete((req, res, next) =>
     Promise.resolve()
       .then(() =>
