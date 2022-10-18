@@ -12,7 +12,8 @@
         "application/json"
       ],
       "schemes": [
-        "http"
+        "http",
+        "https"
       ]
     },
     "files": [
