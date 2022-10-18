@@ -1,6 +1,5 @@
 const { Sequelize } = require("sequelize");
 require('dotenv').config()
-console.log('100000000')
 // const sequelize = new Sequelize("fqa7o4b6iu677nb6", "xuo0f2hpvndexhv2", "dxuitpp4njqkwqjr", {
 //     host: 'migae5o25m2psr4q.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
 //     dialect: "mysql",
