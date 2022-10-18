@@ -4,7 +4,7 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const esg = require('express-swagger-generator')
-const cors = required('cors')
+const cors = require('cors')
 
 // swagger config
 const defaultOptions = require('./swagger.json')
