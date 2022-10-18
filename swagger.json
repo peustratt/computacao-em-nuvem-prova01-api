@@ -6,7 +6,7 @@
         "title": "Swagger",
         "version": "1.0.0"
       },
-      "host": "https://computacao-em-nuvem-api.herokuapp.com:80",
+      "host": "computacao-em-nuvem-api.herokuapp.com:80",
       "basePath": "/api",
       "produces": [
         "application/json"
