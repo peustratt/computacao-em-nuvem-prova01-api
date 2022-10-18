@@ -7,10 +7,12 @@ POST cria um recurso
 PUT atualiza um recurso
 PATCH serve para atualizar partes de um recurso, e não o recurso todo
 DELETE exclui um recurso
+### Links para testes
 
-### Ajustes e melhorias
+ - [Link da aplicação:](https://computacao-em-nuvem-api.herokuapp.com/)
 
- [Link da aplicação:](https://computacao-em-nuvem-api.herokuapp.com/)
+ - [Link do swagger:](https://computacao-em-nuvem-api.herokuapp.com/api-docs#)
+
 ## 🛠 Tecnologias      
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" align="center" width="25" height="25" /> JavaScript
 
