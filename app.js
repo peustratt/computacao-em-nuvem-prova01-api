@@ -4,6 +4,7 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const esg = require('express-swagger-generator')
+const cors = required('cors')
 
 // swagger config
 const defaultOptions = require('./swagger.json')
@@ -12,8 +13,10 @@ const options = Object.assign(defaultOptions, { basedir: __dirname }) // app abs
 const { Store } = require("./routes");
 
 var app = express();
+app.use(cors())
 const expressSwagger = esg(app)
 expressSwagger(options)
+
 
 app.use(logger("dev"));
 app.use(express.json());
