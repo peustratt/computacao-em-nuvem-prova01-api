@@ -35,6 +35,7 @@ Para instalar a api do mundo taci, siga estas etapas:
 # create database 'mundo_taci'
 mysql -u root -p
 # quando solicitado no prompt digite o password black-magic
+CREATE DATABASE mundo_taci;
 # clonar o repositório
 # via https
 git clone https://github.com/peustratt/computacao-em-nuvem-prova01-api.git
