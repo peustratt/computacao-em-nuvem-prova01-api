@@ -10,6 +10,7 @@ DELETE exclui um recurso
 
 ### Ajustes e melhorias
 
+ [Link da aplicação:](https://computacao-em-nuvem-api.herokuapp.com/)
 ## 🛠 Tecnologias      
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" align="center" width="25" height="25" /> JavaScript
 
